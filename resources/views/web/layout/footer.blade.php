@@ -35,7 +35,7 @@
                     <ul>
                         <li><a href="{{ LaravelLocalization::localizeUrl('/web-client') }}">العملاء</a></li>
                         <li><a href="{{ LaravelLocalization::localizeUrl('/about') }}">عن الشركة</a></li>
-                        <li><a href="{{ LaravelLocalization::localizeUrl('/contact') }}">">تواصل معنا</a></li>
+                        <li><a href="{{ LaravelLocalization::localizeUrl('/contact') }}">تواصل معنا</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,8 +69,8 @@
     </div>
     <div class="footer-bottom align-items-center justify-content-between pb-7 ff-1 dir-rtl" style="background-color:#1A4416;">
         <p class="footer-text text-center text-white">
-            جميع الحقوق &copy;
-            <script>document.write(new Date().getFullYear());</script> محفوظة |  تم البرمجة  <i class="fa fa-heart-o" aria-hidden="true"></i> بواسطة <a href="#" target="_blank">Senior Consulting</a>
+            جميع الحقوق محفوظة &copy;
+            <script>document.write(new Date().getFullYear());</script>  حدائق الخليج |  تمت البرمجة   بواسطة <a href="#" target="_blank">Senior Consulting</a>
         </p>
     </div>
 </footer>

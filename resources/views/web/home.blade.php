@@ -294,7 +294,7 @@
 <section class="search-course-area bg-3 relative pt-50 pb-50">
     <!--<div class="overlay overlay-bg"></div>-->
     <div id="ourclients">
-        <center><h3 class="clr-green">عملاء حدائق الخليخ</h3></center>
+        <center><h3 class="clr-green">عملاء حدائق الخليج</h3></center>
         <div class="clients-wrap">
             <ul id="clientlogo" class="clearfix">
                 @foreach ($clients as $client)

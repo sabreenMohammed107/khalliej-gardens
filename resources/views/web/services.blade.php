@@ -30,9 +30,9 @@
 									</div>
 								</div>
                                 @endif
-								<div class="row dir-rtl">
+								<div class="row dir-rtl pb-30">
                                     @foreach ( $cat->service as $service)
-									<div class="col-lg-4 col-md-6 single-blog">
+									<div class="col-lg-4 col-md-6 single-blog pb-30">
 										<div class="thumb hover14 hover07">
 											<figure><img class="img-fluid" src="{{ asset('uploads/service') }}/{{ $service->image }}" alt=""></figure>
 										</div>
@@ -41,7 +41,7 @@
 												<h4 class="clr-green pt-20 pb-20"> {{ $service->ar_name }}</h4>
 											</a>
 											<p>
-                                                {!! strip_tags(Illuminate\Support\Str::limit($service->ar_desc ?? '', $limit = 150, $end = '...')) !!}
+                                                {!! strip_tags(Illuminate\Support\Str::limit($service->ar_desc ?? '', $limit = 80, $end = '...')) !!}
 											</p>
 											<h4><a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $service->id) }}" class="clr-green">إقراء المزيد &gt;&gt;</a></h4>
 										</div>
