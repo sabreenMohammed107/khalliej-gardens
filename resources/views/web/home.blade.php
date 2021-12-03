@@ -13,7 +13,7 @@
                 <p class="pt-10 pb-10 text-white">
                     {{$company->ar_name}}
                 </p>
-                <a href="{{ LaravelLocalization::localizeUrl('/service') }}" class="primary-btn2">خدمات حدائق الخليج</a>
+                <a href="{{ LaravelLocalization::localizeUrl('/web-service') }}" class="primary-btn2">خدمات حدائق الخليج</a>
                 <a href="{{ LaravelLocalization::localizeUrl('/contact') }}" class="contact_link">تواصل معنا</a>
             </div>
         </div>
@@ -271,7 +271,7 @@
 
         </div>
         <div class="row justify-content-center align-items-center mt-30">
-            <a href="{{ LaravelLocalization::localizeUrl('/blogs') }}" class="primary-btn3 text-uppercase">...المزيد</a>
+            <a href="{{ LaravelLocalization::localizeUrl('/web-blogs') }}" class="primary-btn3 text-uppercase">...المزيد</a>
         </div>
     </div>
 </section>

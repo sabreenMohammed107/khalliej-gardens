@@ -35,14 +35,14 @@ Route::group(
 	Route::get('/contact', [App\Http\Controllers\IndexController::class, 'contact'])->name('contact');
     Route::post('/contact-message', [App\Http\Controllers\IndexController::class,'sendMessage']);
       //service
-	Route::get('/service', [App\Http\Controllers\IndexController::class, 'service'])->name('service');
+	Route::get('/web-service', [App\Http\Controllers\IndexController::class, 'service'])->name('service');
     Route::get('/single-service/{id}', [App\Http\Controllers\IndexController::class,'singleService']);
      //client
-	Route::get('/client', [App\Http\Controllers\IndexController::class, 'client'])->name('client');
+	Route::get('/web-client', [App\Http\Controllers\IndexController::class, 'client'])->name('client');
        //gallery
-	Route::get('/gallery', [App\Http\Controllers\IndexController::class, 'gallery'])->name('gallery');
+	Route::get('/web-gallery', [App\Http\Controllers\IndexController::class, 'gallery'])->name('gallery');
      //blogs
-	Route::get('/blogs', [App\Http\Controllers\IndexController::class, 'blogs'])->name('blogs');
+	Route::get('/web-blogs', [App\Http\Controllers\IndexController::class, 'blogs'])->name('blogs');
     Route::get('/single-blog/{id}', [App\Http\Controllers\IndexController::class,'singleBlog']);
     Route::post('/send-Comment', [App\Http\Controllers\IndexController::class,'sendComment']);
     });

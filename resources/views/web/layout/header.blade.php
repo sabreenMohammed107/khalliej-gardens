@@ -8,10 +8,10 @@
                 <ul class="nav-menu pl-3">
                     <li><a href="{{ LaravelLocalization::localizeUrl('/') }}" class="active">{{ __('links.home') }}</a></li>
                     <li><a href="{{ LaravelLocalization::localizeUrl('/about') }}">عن حدائق الخليج</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/service') }}">خدمتنا</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/gallery') }}">الصور والفيديوهات</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/blogs') }}">المدونة</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/client') }}">عملائنا</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-service') }}">خدمتنا</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-gallery') }}">الصور والفيديوهات</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-blogs') }}">المدونة</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-client') }}">عملائنا</a></li>
                     <li><a href="{{ LaravelLocalization::localizeUrl('/contact') }}">تواصل معنا </a></li>
                     {{-- @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                     <li>
