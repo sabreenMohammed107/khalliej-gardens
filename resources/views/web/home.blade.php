@@ -233,7 +233,7 @@
 
         </div>
         <div class="row justify-content-center align-items-center">
-            <a href="{{ LaravelLocalization::localizeUrl('/gallery') }}" class="primary-btn3">...المزيد</a>
+            <a href="{{ LaravelLocalization::localizeUrl('/web-gallery') }}" class="primary-btn3">...المزيد</a>
         </div>
     </div>
 </section>
