@@ -33,12 +33,31 @@
                         </div>
                         <div class="social-nav row no-gutters p-10-40">
                             <div class="col-lg-6 col-md-6 ">
-                                <ul class="focials">
+                                <?php
+
+                                // $blogId = $blog->id;
+                                if( LaravelLocalization::getCurrentLocale() === "en"){
+
+                                    $url = 'http://khalliej-gardens.senior-consultingco.com/en/single-service/'.$service->id;
+                                }else{
+                                    $url = 'http://khalliej-gardens.senior-consultingco.com/single-service/'.$service->id;
+                                }
+
+
+                                ?>
+                                                            <ul  class="focials">
+                                                                <li class="ftco-animate"><a <a href="https://twitter.com/intent/tweet?url={{ urlencode($url) }}"  target="popup" onclick="window.open('https://twitter.com/intent/tweet?url={{ urlencode($url) }}','popup','width=600,height=600'); return false;" class="border-white"><i class="fa fa-twitter"></i></a></li>
+                                                                <li class="ftco-animate"><a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($url) }}" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{urlencode($url)}}','popup','width=600,height=600'); return false;" class="border-white"><i class="fa fa-facebook"></i></a></li>
+
+                                                                <li class="ftco-animate"> <a href="https://wa.me/?text={{ urlencode($url) }}"  target="popup" onclick="window.open('https://wa.me/?text={{ urlencode($url) }}','popup','width=600,height=600'); return false;" class="border-white"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                                                                </li>
+                                                            </ul>
+                                {{-- <ul class="focials">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
+                                </ul> --}}
                             </div>
                             <div class="col-lg-6 col-md-6 navs mb-20">
 
@@ -63,7 +82,7 @@
                                     <div class="details">
                                         <a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $row->id) }}"><h6> {{ $row->ar_name }}</h6></a>
                                         <p>
-                                            {{ strip_tags(Illuminate\Support\Str::limit($row->ar_desc ?? '', $limit = 150, $end = '...')) }}
+                                            {{ strip_tags(Illuminate\Support\Str::limit($row->ar_desc ?? '', $limit = 35, $end = '...')) }}
                                         </p>
                                     </div>
                                 </div>

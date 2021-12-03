@@ -85,7 +85,7 @@
             </div>
         </div>
         <div class="row pb-50 dir-rtl justify-content-between align-items-center">
-            @foreach ($whyUs as $why)
+            @foreach ($whyUs as $key =>$why)
 
 
             <div class="col-lg-2 p-no our-service">
@@ -94,7 +94,22 @@
                         <a href="#" class="text-center">
                             <div class="content-overlay content-overlay2"></div>
                             <div class="thumb pt-20">
-                                <img src="imgs/Slate.svg" alt="" class="h-55">
+                                @if ($key == 0)
+                                <img src="{{ asset('webassets/imgs/Slate.svg')}}" alt="" class="h-55">
+                            @endif
+                            @if ($key == 1)
+                            <img src="{{ asset('webassets/imgs/Group382.svg')}}" alt="" class="h-55">
+                        @endif
+                        @if ($key == 2)
+                        <img src="{{ asset('webassets/imgs/Bribery.svg')}}" alt="" class="h-55">
+                    @endif
+                    @if ($key == 3)
+                    <img src="{{ asset('webassets/imgs/Nomination.svg')}}" alt="" class="h-55">
+                @endif
+                @if ($key == 4)
+                <img src="{{ asset('webassets/imgs/Ideology.svg')}}" alt="" class="h-55">
+            @endif
+
                             </div>
                             <h5 class="pt-20 pb-20 clr-green">{{$why->en_title}}</h5>
                             <p class="sub-title">

@@ -153,8 +153,8 @@ display: none;
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
-                        <h1 class="mb-10 pt-50 clr-green">عملاء حدائق الخليخ</h1>
-                        <p> عملاء حدائق الخليخ سعداء بتقديم أفضل خدماتنا لعملاء حدائق الخليخ</p>
+                        <h1 class="mb-10 pt-50 clr-green">عملاء حدائق الخليج</h1>
+                        <p> عملاء حدائق الخليج سعداء بتقديم أفضل خدماتنا لعملاء حدائق الخليج</p>
                     </div>
                 </div>
             </div>

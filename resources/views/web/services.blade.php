@@ -69,7 +69,7 @@
                                     <div class="details">
                                         <a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $row->id) }}"><h6> {{ $row->ar_name }}</h6></a>
                                         <p>
-                                            {{ strip_tags(Illuminate\Support\Str::limit($row->ar_desc ?? '', $limit = 150, $end = '...')) }}
+                                            {{ strip_tags(Illuminate\Support\Str::limit($row->ar_desc ?? '', $limit = 35, $end = '...')) }}
                                         </p>
                                     </div>
                                 </div>

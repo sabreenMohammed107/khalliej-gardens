@@ -6,13 +6,13 @@
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu pl-3">
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/') }}" class="active">{{ __('links.home') }}</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/about') }}">عن حدائق الخليج</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-service') }}">خدمتنا</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-gallery') }}">الصور والفيديوهات</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-blogs') }}">المدونة</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-client') }}">عملائنا</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/contact') }}">تواصل معنا </a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/') }}" class="{{ Request::segment(1) == null ? 'active' : null }}">{{ __('links.home') }}</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/about') }}" class="{{ Request::segment(1) == 'null' ? 'active' : null }}" >عن حدائق الخليج</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-service') }}" class="{{ Request::segment(1) == 'web-service' ? 'active' : null }}" >خدمتنا</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-gallery') }}" class="{{ Request::segment(1) == 'web-gallery' ? 'active' : null }}" >الصور والفيديوهات</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-blogs') }}" class="{{ Request::segment(1) == 'web-blogs' ? 'active' : null }}" >المدونة</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-client') }}" class="{{ Request::segment(1) == 'web-client' ? 'active' : null }}" >عملائنا</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/contact') }}" class="{{ Request::segment(1) == 'contact' ? 'active' : null }}" >تواصل معنا </a></li>
                     {{-- @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                     <li>
                         @if (LaravelLocalization::getCurrentLocale() != 'ar' && $localeCode == 'ar')

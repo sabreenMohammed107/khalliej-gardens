@@ -73,7 +73,7 @@
                             <div class="details">
                                 <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}"><h6> {{ $blog->ar_title }}</h6></a>
                                 <p>
-                                    {!! strip_tags(Illuminate\Support\Str::limit($blog->ar_text ?? '', $limit = 150, $end = '...')) !!}
+                                    {!! strip_tags(Illuminate\Support\Str::limit($blog->ar_text ?? '', $limit = 35, $end = '...')) !!}
                                 </p>
                             </div>
                         </div>
