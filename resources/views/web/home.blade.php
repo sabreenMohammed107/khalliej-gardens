@@ -156,22 +156,23 @@
         <div class="filters-content">
             <div class="row grid">
                 @foreach ($categories as $row)
-
+                @foreach ( $row->service as $service)
                 <div class="col-sm-3 all {{$row->id}}">
                     <div class="item">
                         <div class="hover07 hover13">
-                            <figure><img src="{{ asset('uploads/categories') }}/{{ $row->image }}" /></figure>
+                            <figure><img src="{{ asset('uploads/service') }}/{{ $service->image }}" /></figure>
                         </div>
                         <!--<img src="imgs/1.webp" alt="Work 1">-->
                         <div class="p-inner">
-                            <h5><a href="#">{{ $row->ar_name }}</a></h5>
+                            <h5><a href="#">{{ $service->ar_name }}</a></h5>
                             <div class="cat">
-                                {!! Illuminate\Support\Str::limit(strip_tags($row->ar_brief),  $limit = 250, $end = '...') !!}
-</div>
-                            <h5 class="pt-10"><a href="{{ LaravelLocalization::localizeUrl('/web-service') }}" class="btn-more">إقرأ المزيد</a></h5>
+                                {!! strip_tags(Illuminate\Support\Str::limit($service->ar_desc ?? '', $limit = 80, $end = '...')) !!}
+                            </div>
+                            <h5 class="pt-10"><a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $service->id) }}" class="btn-more">إقرأ المزيد</a></h5>
                         </div>
                     </div>
                 </div>
+                @endforeach
                 @endforeach
 
             </div>
