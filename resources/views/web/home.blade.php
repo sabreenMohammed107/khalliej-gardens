@@ -8,6 +8,7 @@
             <div class="banner-content col-lg-6 col-md-12 pt-80">
                 <h1 class="text-uppercase">
                     حدائق الخليج لتصميم
+                    <br />
                     وتنسيق الحدائق
                 </h1>
                 <p class="pt-10 pb-10 text-white">
