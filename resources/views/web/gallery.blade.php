@@ -54,15 +54,15 @@
                 @else
                 video
                 @endif">
-                            <div class="item">
+                            <div class="item w-100">
                                 @if ($row->type == 1)
                                     <a href="{{ asset('uploads/categories') }}/{{ $row->image }}"
                                         class="img-gal">
                                         <div class="single-imgs relative">
-                                            <div class="container-overlay">
-                                                <div class="content">
+                                            <div class="container-overlay" style="width:100%">
+                                                <div class="content ">
                                                     <div class="content-overlay overlay-height"></div>
-                                                    <img class="content-image"
+                                                    <img class="content-image w-100"
                                                         src="{{ asset('uploads/categories') }}/{{ $row->image }}">
                                                     <div class="content-details fadeIn-bottom">
                                                         <h3 class="content-title">{{ $row->ar_name }}</h3>
@@ -77,13 +77,18 @@
                                     <a class="play-btn" href="{{ $row->image }}">
                                         <div class="video-left justify-content-center align-items-center d-flex relative"
                                            >
-                                            <video autoplay muted loop style=" width: 100%;
+                                            {{-- <video autoplay muted loop style=" width: 100%;
                                             height: 100%;
                                             position: absolute;
                                             object-fit: cover;
                                             z-index: 0;">
                                                 <source src="{{ $row->image }}" type="video/mp4" />
-                                            </video>
+                                            </video> --}}
+                                            <iframe src="{{ $row->image }}" style=" width: 100%;
+                                                height: 100%;
+                                                position: absolute;
+                                                object-fit: cover;
+                                                z-index: 0;" frameborder="0"></iframe>
                                             <div>
                                                 <i class="fa fa-play text-white fz-18"></i>
                                             </div>

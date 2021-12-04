@@ -42,7 +42,7 @@
                         </div>
                         <div class="details-content p-10-40">
                             <a href="#">
-                                <h4 class="clr-green">{{ $blog->ar_name }}</h4>
+                                <h4 class="clr-green"> {{ $blog->ar_title }}</h4>
                             </a>
                             <h5>
                                 {!! $blog->ar_text  !!}    </h5>
@@ -77,8 +77,8 @@
                             </div>
                             <div class="col-lg-6 col-md-6 navs mb-20">
 
-                                <a href="@if(App\Models\Blog::where('id',$previous)->first()) {{ LaravelLocalization::localizeUrl('/single-blogs/' . $previous) }}  @endif" class="nav-prev"><span class="lnr lnr-arrow-right"></span>الخدمة السابقة</a>
-                                <a href="@if(App\Models\Blog::where('id',$next)->first()) {{ LaravelLocalization::localizeUrl('/single-blogs/' . $next) }}  @endif " class="nav-next">الخدمة التالية<span class="lnr lnr-arrow-left"></span></a>
+                                <a href="@if(App\Models\Blog::where('id',$previous)->first()) {{ LaravelLocalization::localizeUrl('/single-blog/' . $previous) }}  @endif" class="nav-prev"><span class="lnr lnr-arrow-right"></span>الخدمة السابقة</a>
+                                <a href="@if(App\Models\Blog::where('id',$next)->first()) {{ LaravelLocalization::localizeUrl('/single-blog/' . $next) }}  @endif " class="nav-next">الخدمة التالية<span class="lnr lnr-arrow-left"></span></a>
                             </div>
                         </div>
 
@@ -150,7 +150,7 @@
                                         <figure><img class="img-fluid" src="{{ asset('uploads/blogs') }}/{{ $row->image }}" alt=""></figure>
                                     </div>
                                     <div class="details">
-                                        <a href="{{ LaravelLocalization::localizeUrl('/single-blogs/' . $row->id) }}"><h6> {{ $row->ar_title }}</h6></a>
+                                        <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $row->id) }}"><span style="color: #333">{{ $row->ar_title }}</span></a>
                                         <p>
                                             {!! strip_tags(Illuminate\Support\Str::limit($row->ar_text ?? '', $limit = 35, $end = '...')) !!}
                                         </p>

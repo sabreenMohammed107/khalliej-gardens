@@ -6,8 +6,7 @@
                 <div class="single-footer-widget">
                     <h4>عن حدائق الخليج</h4>
                     <p class="text-white">
-                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم
-                    </p>
+                        لقدد حققت مؤسسة فهد الحكير نجاحاً منذ تأسيسها من حيث نوعة الخدمة، ومعايير الجودة، وتقديم القيمة، ورضى العملاء قد ساهمت في رفع ثقة العملاء ونحن فخورون بما نقدمه من خدمة، لأننا نعلم بأن قيمنا لا تقبل المساومة ولأننا نؤمن بأن الجودة هى معيار التميز .</p>
                 </div>
                 <div class="footer-bottom row align-items-center justify-content-between dir-rtl mb-20">
                     <div class="col-lg-12 col-sm-12 footer-social">
@@ -52,7 +51,7 @@
                         <li>
                             <div class="row">
                                 <div class="col-lg-1"><i class="fa fa-mobile"></i></div>
-                                <div class="col-lg-11"><a href="#" class="clr-green">الهاتف<br /></a><span>{{$contact->phone}}</span></div>
+                                <div class="col-lg-11 "><a href="#" class="clr-green">الهاتف<br /></a><span>{{$contact->phone}}</span></div>
                             </div>
                         </li>
                         <li>

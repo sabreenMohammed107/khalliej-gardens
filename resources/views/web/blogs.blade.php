@@ -27,7 +27,7 @@
                             <div class="col-lg-12">
                                 <div class="single-carusel row align-items-center">
                                     <div class="col-12 col-md-5 thumb hover07 hover14">
-                                        <figure><img class="img-fluid" src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt=""></figure>
+                                        <figure><img class="img-fluid " src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt=""></figure>
                                     </div>
                                     <div class="detials col-12 col-md-7">
                                         <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}">
@@ -36,7 +36,8 @@
                                             </h4>
                                         </a>
                                         <h5>
-                                            {{ $blog->ar_text }}
+                                            {!! Illuminate\Support\Str::limit(strip_tags($blog->ar_text),  $limit = 100, $end = '...') !!}
+                                            {{-- {{ $blog->ar_text }} --}}
                                         </h5>
                                         <h4 class="pt-10"><a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}" class="clr-green fz-18">إقراء المزيد &gt;&gt;</a></h4>
                                     </div>
@@ -71,7 +72,7 @@
                                 <figure><img class="img-fluid" src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt=""></figure>
                             </div>
                             <div class="details">
-                                <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}"><h6> {{ $blog->ar_title }}</h6></a>
+                                <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}"><span style="color: #333">{{ $blog->ar_title }}</span></a>
                                 <p>
                                     {!! strip_tags(Illuminate\Support\Str::limit($blog->ar_text ?? '', $limit = 35, $end = '...')) !!}
                                 </p>

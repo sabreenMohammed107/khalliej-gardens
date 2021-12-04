@@ -12,7 +12,7 @@
                     وتنسيق الحدائق
                 </h1>
                 <p class="pt-10 pb-10 text-white">
-                    {{$company->ar_name}}
+                    {{$company->ar_overview}}
                 </p>
                 <a href="{{ LaravelLocalization::localizeUrl('/web-service') }}" class="primary-btn2">خدمات حدائق الخليج</a>
                 <a href="{{ LaravelLocalization::localizeUrl('/contact') }}" class="contact_link">تواصل معنا</a>
@@ -60,8 +60,9 @@
                 <br />
                 <h4 class="clr-green">{!!$company->ar_about_title!!} </h4>
                 <h5 class="pt-20">
-
-                  {!! strip_tags(Illuminate\Support\Str::limit($company->ar_about ?? '', $limit = 500, $end = '...')) !!}
+                   {!!$company->ar_about!!}
+                   {!! Illuminate\Support\Str::limit(strip_tags($company->ar_about),  $limit = 100, $end = '...') !!}
+                  {{-- {!! strip_tags(Illuminate\Support\Str::limit($company->ar_about ?? '', $limit = 500, $end = '...')) !!} --}}
             </h5>
             </div>
         </div>
@@ -164,8 +165,10 @@
                         <!--<img src="imgs/1.webp" alt="Work 1">-->
                         <div class="p-inner">
                             <h5><a href="#">{{ $row->ar_name }}</a></h5>
-                            <div class="cat">{{ $row->ar_brief }}</div>
-                            <h5 class="pt-10"><a href="#" class="btn-more">إقرأ المزيد</a></h5>
+                            <div class="cat">
+                                {!! Illuminate\Support\Str::limit(strip_tags($row->ar_brief),  $limit = 250, $end = '...') !!}
+</div>
+                            <h5 class="pt-10"><a href="{{ LaravelLocalization::localizeUrl('/web-service') }}" class="btn-more">إقرأ المزيد</a></h5>
                         </div>
                     </div>
                 </div>
@@ -217,10 +220,10 @@
             <div class="col-lg-4">
                 <a href="imgs/counter.webp" class="img-gal">
                     <div class="single-imgs relative">
-                        <div class="container-overlay">
+                        <div class="container-overlay" style="width:80%" >
                             <div class="content">
                                 <div class="content-overlay"></div>
-                                <img class="content-image" src="{{ asset('uploads/galleries') }}/{{ $row->image }}">
+                                <img class="content-image w-100" style="height: 230px" src="{{ asset('uploads/categories') }}/{{ $row->image }}">
                                 <div class="content-details fadeIn-bottom">
                                     <h3 class="content-title">{{ $row->ar_title }}</h3>
                                     <p class="content-text">{{ $row->ar_text }} </p>
@@ -276,10 +279,11 @@
                 </div>
                 <div class="text-box">
                     <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $row->id) }}">
-                        <h4 class="clr-green pt-20 pb-20">{{ $row->ar_title }}</h4>
+                        <h4 class="clr-green pt-20 pb-20" style="font-size: 20px">{{ $row->ar_title }}</h4>
                     </a>
                     <p>
-                        {{ $row->ar_text }}
+                        {!! Illuminate\Support\Str::limit(strip_tags($row->ar_text),  $limit = 250, $end = '...') !!}
+                        {{-- {{ $row->ar_text }} --}}
                     </p>
                 </div>
             </div>

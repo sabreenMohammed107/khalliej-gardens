@@ -30,7 +30,7 @@
                     </video>
                     @endif
                 </th>
-                <th>{{$row->cat->ar_name}}</th>
+                <th>{{$row->cat->ar_category ?? ''}}</th>
                     <th>{{$row->ar_title}}</th>
                     <th>{{$row->en_title}}</th>
                     <th>{{$row->en_text}} </th>

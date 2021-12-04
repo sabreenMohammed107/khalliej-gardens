@@ -86,10 +86,10 @@
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="direction:rtl">
             <div class="form-group ">
                 <label> التصنيف</label>
-                <select name="category_id" id="category_id" class="form-control">
+                <select name="gallery_category_id" id="gallery_category_id" class="form-control">
                     <option value="">إختر</option>
                     @foreach ($categories as $cat)
-                    <option value="{{$cat->id}}" {{ ( $cat->id == $row->category_id) ? 'selected' : '' }}>{{$cat->ar_name}}</option>
+                    <option value="{{$cat->id}}" {{ ($cat->id == $row->gallery_category_id) ? 'selected' : '' }}>{{$cat->ar_category}}</option>
                     @endforeach
                 </select>
 
