@@ -101,7 +101,15 @@
                     <div class="col-md-2 mb-3">
                         <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">
+                                <a class="nav-link active" id="value-tab" data-toggle="tab" href="#value" role="tab" aria-controls="value" aria-selected="false">
+                                    <div class="thumb pt-20 text-center">
+                                        <img src="{{ asset('webassets/imgs/Slate.svg')}}" alt="">
+                                        <h5 class="clr-green pt-20">VALUE</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">
                                     <div class="thumb pt-20 text-center">
                                         <img src="{{ asset('webassets/imgs/Group382.svg')}}" alt="">
                                         <h5 class="clr-green pt-20">MISSION</h5>
@@ -116,20 +124,13 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="value-tab" data-toggle="tab" href="#value" role="tab" aria-controls="value" aria-selected="false">
-                                    <div class="thumb pt-20 text-center">
-                                        <img src="{{ asset('webassets/imgs/Slate.svg')}}" alt="">
-                                        <h5 class="clr-green pt-20">VALUE</h5>
-                                    </div>
-                                </a>
-                            </li>
+
                         </ul>
                     </div>
                     <!-- /.col-md-4 -->
                     <div class="col-md-10">
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active clr-gray" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="tab-pane fade clr-gray" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <h2>رؤيتنا</h2>
                                 <h5>
                                     {!!$company->ar_vision!!}   </h5>
@@ -139,7 +140,7 @@
                                 <h5>
                                     {!!$company->ar_mission!!}        </h5>
                             </div>
-                            <div class="tab-pane fade clr-gray" id="value" role="tabpanel" aria-labelledby="value-tab">
+                            <div class="tab-pane fade show active clr-gray" id="value" role="tabpanel" aria-labelledby="value-tab">
                                 <h2>قيمتنا</h2>
                                 <h5>
                                     {!!$company->ar_value!!}  </h5>
