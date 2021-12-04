@@ -104,23 +104,23 @@
                                 <a class="nav-link active" id="value-tab" data-toggle="tab" href="#value" role="tab" aria-controls="value" aria-selected="false">
                                     <div class="thumb pt-20 text-center">
                                         <img src="{{ asset('webassets/imgs/Slate.svg')}}" alt="">
-                                        <h5 class="clr-green pt-20">VALUE</h5>
+                                        <h5 class="clr-green pt-20">قيمتنا</h5>
                                     </div>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">
+                                <a class="nav-link " id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="profile" aria-selected="true">
                                     <div class="thumb pt-20 text-center">
                                         <img src="{{ asset('webassets/imgs/Group382.svg')}}" alt="">
-                                        <h5 class="clr-green pt-20">MISSION</h5>
+                                        <h5 class="clr-green pt-20">اهدافنا</h5>
                                     </div>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="contact" aria-selected="false">
                                     <div class="thumb pt-20 text-center">
                                         <img src="{{ asset('webassets/imgs/Ideology.svg')}}" alt="">
-                                        <h5 class="clr-green pt-20">VISION</h5>
+                                        <h5 class="clr-green pt-20">رؤيتنا</h5>
                                     </div>
                                 </a>
                             </li>
