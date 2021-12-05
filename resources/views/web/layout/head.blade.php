@@ -30,4 +30,14 @@
         <link rel="stylesheet" href="{{ asset('webassets/css/owl.carousel.css')}}">
         <link rel="stylesheet" href="{{ asset('webassets/css/jquery-ui.css')}}">
         <link rel="stylesheet" href="{{ asset('webassets/css/main.css')}}">
+        <style>
+            .isotope .isotope-item
+{
+  -webkit-transition-property: right, top, -webkit-transform, opacity;
+     -moz-transition-property: right, top, -moz-transform, opacity;
+      -ms-transition-property: right, top, -ms-transform, opacity;
+       -o-transition-property: right, top, -o-transform, opacity;
+          transition-property: right, top, transform, opacity;
+}
+        </style>
     </head>

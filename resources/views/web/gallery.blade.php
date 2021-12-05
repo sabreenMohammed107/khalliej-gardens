@@ -54,25 +54,22 @@
                 @else
                 video
                 @endif">
-                            <div class="item w-100">
+                            <div class="item">
                                 @if ($row->type == 1)
-                                    <a href="{{ asset('uploads/categories') }}/{{ $row->image }}"
-                                        class="img-gal">
-                                        <div class="single-imgs relative">
-                                            <div class="container-overlay" style="width:100%">
-                                                <div class="content ">
-                                                    <div class="content-overlay overlay-height"></div>
-                                                    <img class="content-image w-100"
-                                                        src="{{ asset('uploads/categories') }}/{{ $row->image }}">
-                                                    <div class="content-details fadeIn-bottom">
-                                                        <h3 class="content-title">{{ $row->ar_name }}</h3>
-                                                        <p class="content-text">
-                                                            {{ $row->ar_brief }}</p>
-                                                    </div>
+                                <a href="imgs/counter.webp" class="img-gal">
+                                    <div class="single-imgs relative">
+                                        <div class="container-overlay" style="width:100%" >
+                                            <div class="content">
+                                                <div class="content-overlay"></div>
+                                                <img class="content-image w-100"  src="{{ asset('uploads/categories') }}/{{ $row->image }}">
+                                                <div class="content-details fadeIn-bottom">
+                                                    <h3 class="content-title">{{ $row->ar_title }}</h3>
+                                                    <p class="content-text">{{ $row->ar_text }} </p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </div>
+                                </a>
                                 @else
                                     <a class="play-btn" href="{{ $row->image }}">
                                         <div class="video-left justify-content-center align-items-center d-flex relative"

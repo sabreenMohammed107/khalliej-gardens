@@ -9,7 +9,7 @@
                     <li><a href="{{ LaravelLocalization::localizeUrl('/') }}" class="{{ Request::segment(1) == null ? 'active' : null }}">{{ __('links.home') }}</a></li>
                     <li><a href="{{ LaravelLocalization::localizeUrl('/about') }}" class="{{ Request::segment(1) == 'about' ? 'active' : null }}" >عن حدائق الخليج</a></li>
                     <li><a href="{{ LaravelLocalization::localizeUrl('/web-service') }}" class="{{ Request::segment(1) == 'web-service' ? 'active' : null }}" >خدمتنا</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-gallery') }}" class="{{ Request::segment(1) == 'web-gallery' ? 'active' : null }}" >الصور والفيديوهات</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/web-gallery') }}" class="{{ Request::segment(1) == 'web-gallery' ? 'active' : null }}" >مكتبة الصور والفيديوهات</a></li>
                     <li><a href="{{ LaravelLocalization::localizeUrl('/web-blogs') }}" class="{{ Request::segment(1) == 'web-blogs' ? 'active' : null }}" >المدونة</a></li>
                     <li><a href="{{ LaravelLocalization::localizeUrl('/web-client') }}" class="{{ Request::segment(1) == 'web-client' ? 'active' : null }}" >عملائنا</a></li>
                     <li><a href="{{ LaravelLocalization::localizeUrl('/contact') }}" class="{{ Request::segment(1) == 'contact' ? 'active' : null }}" >تواصل معنا </a></li>

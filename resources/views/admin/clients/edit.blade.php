@@ -5,7 +5,7 @@
 
 </div>
 <br />
-<form action="{{ route('clients.update',$row->id) }}" method="POST">
+<form action="{{ route('clients.update',$row->id) }}" method="POST"  enctype="multipart/form-data" >
     {{ csrf_field() }}
     @method('PUT')
     <div class="row">
@@ -13,7 +13,7 @@
 
             <div class="form-group">
                 <label for="file-upload" class="custom-file-label">
-                    <i class="fa fa-cloud-upload"></i>{{ $row->logo }}
+                    <i class="fa fa-cloud-upload"></i>{{ $row->logo}}
                   </label>
                   <input id="file-upload" class="custom-file-label" name='logo' type="file" style="display: none" >
 

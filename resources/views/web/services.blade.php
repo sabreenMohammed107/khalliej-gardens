@@ -41,7 +41,7 @@
 												<h4 class="clr-green pt-20 pb-20"> {{ $service->ar_name }}</h4>
 											</a>
 											<p>
-                                                {!! strip_tags(Illuminate\Support\Str::limit($service->ar_desc ?? '', $limit = 80, $end = '...')) !!}
+                                                {!! Illuminate\Support\Str::limit($service->ar_desc ?? '', $limit = 80, $end = '...') !!}
 											</p>
 											<h4><a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $service->id) }}" class="clr-green">إقراء المزيد &gt;&gt;</a></h4>
 										</div>
@@ -69,7 +69,7 @@
                                     <div class="details">
                                         <a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $row->id) }}"><h6> {{ $row->ar_name }}</h6></a>
                                         <p>
-                                            {{ strip_tags(Illuminate\Support\Str::limit($row->ar_desc ?? '', $limit = 35, $end = '...')) }}
+                                            {!! Illuminate\Support\Str::limit($row->ar_desc ?? '', $limit = 35, $end = '...') !!}
                                         </p>
                                     </div>
                                 </div>

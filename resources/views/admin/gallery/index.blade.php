@@ -33,8 +33,9 @@
                 <th>{{$row->cat->ar_category ?? ''}}</th>
                     <th>{{$row->ar_title}}</th>
                     <th>{{$row->en_title}}</th>
-                    <th>{{$row->en_text}} </th>
                     <th>{{$row->ar_text}} </th>
+
+                    <th>{{$row->en_text}} </th>
 
                     <th>@if ($row->active==1)
                         <i class="fa fa-check" aria-hidden="true"></i>

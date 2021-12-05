@@ -22,8 +22,9 @@
 
                     <th>{{$row->ar_title}}</th>
                     <th>{{$row->en_title}}</th>
-                    <th>{{$row->en_breif}} </th>
                     <th>{{$row->ar_brief}} </th>
+
+                    <th>{{$row->en_breif}} </th>
 
 
 

@@ -24,7 +24,7 @@
                         <li><a href="{{ LaravelLocalization::localizeUrl('/') }}">الرئيسية</a></li>
                         <li><a href="{{ LaravelLocalization::localizeUrl('/web-blogs') }}">المقالات</a></li>
                         <li><a href="{{ LaravelLocalization::localizeUrl('/web-service') }}">الخدمات</a></li>
-                        <li><a href="{{ LaravelLocalization::localizeUrl('/web-gallery') }}">الجاليري</a></li>
+                        <li><a href="{{ LaravelLocalization::localizeUrl('/web-gallery') }}">مكتبة الصور والفيديوهات</a></li>
                     </ul>
                 </div>
             </div>

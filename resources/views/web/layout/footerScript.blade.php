@@ -25,13 +25,16 @@
 
 						var data = $(this).attr('data-filter');
 						$grid.isotope({
-							filter: data
+							filter: data,
+                            isOriginLeft: false,
+
 						})
 					});
 
 					var $grid = $(".grid").isotope({
 						itemSelector: ".all",
 						percentPosition: true,
+                        isOriginLeft: false,
 						masonry: {
 							columnWidth: ".all"
 						}
@@ -85,7 +88,19 @@
 					});
 				}
 			}
+
+            var TheFrame;
+$(document).on( "pagebeforehide", function( event, data ) {
+    TheFrame = $(event.target).find("iframe");
+    setTimeout(StopVideo, 500);
+});
+function StopVideo(){
+    var vid  = TheFrame.prop("src");
+    TheFrame.prop("src", "");
+    TheFrame.prop("src", vid);
+}
 		});
+
 	</script>
     @yield('scripts')
 

@@ -32,7 +32,7 @@
                         <div class="content">
                             <a href="">
                                 <div class="content-overlay"></div>
-                                <img class="content-image f-img" src="{{ asset('uploads/categories') }}/{{ $cat->image }}">
+                                <img class="content-image f-img" height="300px" src="{{ asset('uploads/categories') }}/{{ $cat->image }}">
                                 <h4 class="main-title">{{$cat->ar_name}}</h4>
                                 <div class="content-details fadeIn-bottom">
                                     <h3 class="content-title">{{$cat->ar_name}}</h3>
@@ -60,8 +60,8 @@
                 <br />
                 <h4 class="clr-green">{!!$company->ar_about_title!!} </h4>
                 <h5 class="pt-20">
-                   {!!$company->ar_about!!}
-                   {!! Illuminate\Support\Str::limit(strip_tags($company->ar_about),  $limit = 100, $end = '...') !!}
+                   {{-- {!!$company->ar_about!!} --}}
+                   {!! Illuminate\Support\Str::limit(($company->ar_about),  $limit = 500, $end = '...') !!}
                   {{-- {!! strip_tags(Illuminate\Support\Str::limit($company->ar_about ?? '', $limit = 500, $end = '...')) !!} --}}
             </h5>
             </div>
@@ -153,20 +153,20 @@
                 </div>
             </div>
         </div>
-        <div class="filters-content">
+        <div  class="filters-content">
             <div class="row grid">
                 @foreach ($categories as $row)
                 @foreach ( $row->service as $service)
                 <div class="col-sm-3 all {{$row->id}}">
                     <div class="item">
                         <div class="hover07 hover13">
-                            <figure><img src="{{ asset('uploads/service') }}/{{ $service->image }}" /></figure>
+                            <figure><img style="height: 300px" src="{{ asset('uploads/service') }}/{{ $service->image }}" /></figure>
                         </div>
                         <!--<img src="imgs/1.webp" alt="Work 1">-->
                         <div class="p-inner">
                             <h5><a href="#">{{ $service->ar_name }}</a></h5>
                             <div class="cat">
-                                {!! strip_tags(Illuminate\Support\Str::limit($service->ar_desc ?? '', $limit = 80, $end = '...')) !!}
+                                {!! Illuminate\Support\Str::limit($service->ar_desc ?? '', $limit = 80, $end = '...') !!}
                             </div>
                             <h5 class="pt-10"><a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $service->id) }}" class="btn-more">إقرأ المزيد</a></h5>
                         </div>
@@ -207,7 +207,7 @@
         <div class="row justify-content-between align-items-center pt-80 dir-rtl">
             <div class="col-lg-7 col-md-6 search-course-right pb-10">
                 <h3>تنسيق الحدائق </h3>
-                <h4 class="clr-green">جاليري حدائق الخليج</h4>
+                <h4 class="clr-green">مكتبة الصور والفيديوهات حدائق الخليج</h4>
 
             </div>
             <div class="col-lg-5 col-md-6 search-course-left">
@@ -217,14 +217,13 @@
         <div class="row dir-rtl">
             @foreach ($galleries as $row)
 
-
             <div class="col-lg-4">
                 <a href="imgs/counter.webp" class="img-gal">
                     <div class="single-imgs relative">
-                        <div class="container-overlay" style="width:80%" >
+                        <div class="container-overlay" style="width:100%" >
                             <div class="content">
                                 <div class="content-overlay"></div>
-                                <img class="content-image w-100" style="height: 230px" src="{{ asset('uploads/categories') }}/{{ $row->image }}">
+                                <img class="content-image w-100" style="height: 300px" src="{{ asset('uploads/categories') }}/{{ $row->image }}">
                                 <div class="content-details fadeIn-bottom">
                                     <h3 class="content-title">{{ $row->ar_title }}</h3>
                                     <p class="content-text">{{ $row->ar_text }} </p>
@@ -276,14 +275,14 @@
             @foreach ($blogs as $row)
             <div class="col-lg-4 col-md-6 single-blog">
                 <div class="thumb hover07  hover13">
-                    <figure><img class="img-fluid" src="{{ asset('uploads/blogs') }}/{{ $row->image }}" alt=""></figure>
+                    <figure><img style="height: 300px" class="img-fluid" src="{{ asset('uploads/blogs') }}/{{ $row->image }}" alt=""></figure>
                 </div>
                 <div class="text-box">
                     <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $row->id) }}">
                         <h4 class="clr-green pt-20 pb-20" style="font-size: 20px">{{ $row->ar_title }}</h4>
                     </a>
                     <p>
-                        {!! Illuminate\Support\Str::limit(strip_tags($row->ar_text),  $limit = 250, $end = '...') !!}
+                        {!! Illuminate\Support\Str::limit(($row->ar_text),  $limit = 250, $end = '...') !!}
                         {{-- {{ $row->ar_text }} --}}
                     </p>
                 </div>

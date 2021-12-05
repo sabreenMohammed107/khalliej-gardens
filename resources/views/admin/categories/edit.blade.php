@@ -44,14 +44,14 @@
 
             <div class="form-group">
                 <label class="">  نبذة عربى</label>
-                <textarea name="ar_about"   class="form-control" placeholder="نبذة">{{$row->ar_about}}</textarea>
+                <textarea name="ar_brief"   class="form-control" placeholder="نبذة">{{$row->ar_brief}}</textarea>
             </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="direction:rtl">
 
             <div class="form-group">
                 <label class="">  نبذة انجليزى</label>
-                <textarea name="en_about"   class="form-control" placeholder="نبذة">{{$row->en_about}}</textarea>
+                <textarea name="en_breif"   class="form-control" placeholder="نبذة">{{$row->en_breif}}</textarea>
             </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="direction:rtl">

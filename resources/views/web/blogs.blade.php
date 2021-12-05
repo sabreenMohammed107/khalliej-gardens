@@ -36,7 +36,7 @@
                                             </h4>
                                         </a>
                                         <h5>
-                                            {!! Illuminate\Support\Str::limit(strip_tags($blog->ar_text),  $limit = 100, $end = '...') !!}
+                                            {!! Illuminate\Support\Str::limit(($blog->ar_text),  $limit = 100, $end = '...') !!}
                                             {{-- {{ $blog->ar_text }} --}}
                                         </h5>
                                         <h4 class="pt-10"><a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}" class="clr-green fz-18">إقراء المزيد &gt;&gt;</a></h4>
@@ -74,7 +74,7 @@
                             <div class="details">
                                 <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}"><span style="color: #333">{{ $blog->ar_title }}</span></a>
                                 <p>
-                                    {!! strip_tags(Illuminate\Support\Str::limit($blog->ar_text ?? '', $limit = 35, $end = '...')) !!}
+                                    {!! Illuminate\Support\Str::limit($blog->ar_text ?? '', $limit = 35, $end = '...') !!}
                                 </p>
                             </div>
                         </div>

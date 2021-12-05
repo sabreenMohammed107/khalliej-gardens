@@ -140,7 +140,7 @@ display: none;
         <section class="customer-logos slider bg-white">
             @foreach ($clients as $client)
 
-                <div class="slide"><img src="{{ asset('uploads/clients') }}/{{ $client->logo }}"></div>
+                <div class="slide"><img style="height: 120px" src="{{ asset('uploads/clients') }}/{{ $client->logo }}"></div>
 
             @endforeach
 
@@ -163,7 +163,7 @@ display: none;
                     @foreach ($clients as $client)
                     <div class="single-carusel row align-items-center dir-rtl">
                         <div class="col-12 col-md-6 thumb">
-                            <img class="img-fluid" src="{{ asset('uploads/clients') }}/{{ $client->logo }}" alt="">
+                            <img class="img-fluid" style="height: 120px"  src="{{ asset('uploads/clients') }}/{{ $client->logo }}" alt="">
                         </div>
                         <div class="detials col-12 col-md-6">
                             <p>{{ date('d-m-Y', strtotime($client->created_at)) }}</p>

@@ -29,7 +29,7 @@
                 <div class="col-lg-12 text-center pt-20">
                     <h3>حدائق الخليج لتصميم وتنسيق الحدائق</h3>
                     <br />
-                    <h3 class="clr-green">{!!$company->ar_about_title!!}<br />
+                    <h3 class="clr-green pb-3">{!!$company->ar_about_title!!}<br />
                 </div>
                 <div>
                     <h5>

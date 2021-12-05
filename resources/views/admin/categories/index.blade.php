@@ -24,11 +24,12 @@
                 <th><img width="150" src="{{ asset('uploads/categories') }}/{{ $row->image }}" /></th>
                     <th>{{$row->ar_name}}</th>
                     <th>{{$row->en_name}}</th>
+                    <th>{{$row->ar_brief}} </th>
                     <th>{{$row->en_breif}} </th>
-                    <th>{{$row->ar_breif}} </th>
+                    <th>{{$row->ar_overview}}</th>
+
                     <th>{{$row->en_overview}}</th>
 
-                    <th>{{$row->ar_overview}}</th>
                     <th>{{$row->order}}</th>
 
                     <th>
