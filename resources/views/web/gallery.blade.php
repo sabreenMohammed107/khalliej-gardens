@@ -33,13 +33,13 @@
                             @foreach ($categories as $row)
 
 
-                                <li class="close bg-cat1" data-filter=".{{ $row->id }}" onclick="stoping()">{{ $row->ar_category ?? '' }}
+                                <li class="bg-cat1" data-filter=".{{ $row->id }}" onclick="stoping()">{{ $row->ar_category ?? '' }}
                                 </li>
 
                             @endforeach
                             <li class="pl-90"></li>
-                            <li class="close bg-cat2" data-filter=".images" onclick="stoping()" ><i class="fa fa-camera-retro"></i> </li>
-                            <li class="close bg-cat2" data-filter=".video" onclick="stoping()"><i class="fa fa-play"></i></li>
+                            <li class="bg-cat2" data-filter=".images" onclick="stoping()" ><i class="fa fa-camera-retro"></i> </li>
+                            <li class="bg-cat2" data-filter=".video" onclick="stoping()"><i class="fa fa-play"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -112,7 +112,10 @@
 @section('scripts')
 <script>
 $(function(){
-    $('.close').click(function(){
+    $('.bg-cat1').click(function(){
+        $('iframe').attr('src', $('iframe').attr('src'));
+    });
+    $('.bg-cat2').click(function(){
         $('iframe').attr('src', $('iframe').attr('src'));
     });
 });
