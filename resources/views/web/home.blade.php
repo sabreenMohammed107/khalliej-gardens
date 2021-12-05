@@ -28,7 +28,7 @@
             @foreach ( $categories as $cat)
            <div class="col-lg-3">
                 <div class="single-feature">
-                    <div class="container-overlay">
+                    <div class="container-overlay" style="width:100%">
                         <div class="content">
                             <a href="">
                                 <div class="content-overlay"></div>
