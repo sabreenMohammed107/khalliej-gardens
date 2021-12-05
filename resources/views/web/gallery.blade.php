@@ -33,13 +33,13 @@
                             @foreach ($categories as $row)
 
 
-                                <li class="bg-cat1" data-filter=".{{ $row->id }}">{{ $row->ar_category ?? '' }}
+                                <li class="close bg-cat1" data-filter=".{{ $row->id }}" onclick="stoping()">{{ $row->ar_category ?? '' }}
                                 </li>
 
                             @endforeach
                             <li class="pl-90"></li>
-                            <li class="bg-cat2" data-filter=".images"><i class="fa fa-camera-retro"></i> </li>
-                            <li class="bg-cat2" data-filter=".video"><i class="fa fa-play"></i></li>
+                            <li class="close bg-cat2" data-filter=".images" onclick="stoping()" ><i class="fa fa-camera-retro"></i> </li>
+                            <li class="close bg-cat2" data-filter=".video" onclick="stoping()"><i class="fa fa-play"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                     @foreach ($galleries as $row)
 
                         <div
-                            class="col-sm-3 all {{ $row->cat->id ?? '' }} @if ($row->type == 1)
+                            class="col-sm-3  all {{ $row->cat->id ?? '' }} @if ($row->type == 1)
                     images
                 @else
                 video
@@ -107,5 +107,15 @@
     </section>
 
 
+
+@endsection
+@section('scripts')
+<script>
+$(function(){
+    $('.close').click(function(){
+        $('iframe').attr('src', $('iframe').attr('src'));
+    });
+});
+</script>
 
 @endsection
