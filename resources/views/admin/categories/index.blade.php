@@ -21,7 +21,7 @@
             @foreach ($rows as $index => $row)
             <tr>
                 <th>{{ $index + 1 }}</th>
-                <th><img width="150" src="{{ asset('uploads/categories') }}/{{ $row->image }}" /></th>
+                <th><img width="200" src="{{ asset('uploads/categories') }}/{{ $row->image }}" /></th>
                     <th>{{$row->ar_name}}</th>
                     <th>{{$row->en_name}}</th>
                     <th>{{$row->ar_brief}} </th>

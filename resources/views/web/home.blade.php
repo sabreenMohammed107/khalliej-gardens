@@ -282,8 +282,12 @@
                         <h4 class="clr-green pt-20 pb-20" style="font-size: 20px">{{ $row->ar_title }}</h4>
                     </a>
                     <p>
-                        {!! Illuminate\Support\Str::limit(($row->ar_text),  $limit = 250, $end = '...') !!}
-                        {{-- {{ $row->ar_text }} --}}
+                        {{-- {!! Illuminate\Support\Str::limit(($row->ar_text),  $limit = 80, $end = '...') !!} --}}
+                        {{
+                            strip_tags(Illuminate\Support\Str::limit(($row->ar_text),  $limit = 80, $end = '...'))
+
+
+                        }}
                     </p>
                 </div>
             </div>
@@ -313,4 +317,17 @@
         </div>
     </div>
 </section>
+@endsection
+@section('scripts')
+<script>
+$(function(){
+    $('.bg-cat1').click(function(){
+        $('iframe').attr('src', $('iframe').attr('src'));
+    });
+    $('.bg-cat2').click(function(){
+        $('iframe').attr('src', $('iframe').attr('src'));
+    });
+});
+</script>
+
 @endsection

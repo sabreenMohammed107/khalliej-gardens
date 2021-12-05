@@ -20,15 +20,15 @@
             @foreach ($rows as $index => $row)
             <tr>
                 <th>{{ $index + 1 }}</th>
-                <th><img width="100" src="{{ asset('uploads/service') }}/{{ $row->image }}" /></th>
+                <th><img width="200" src="{{ asset('uploads/service') }}/{{ $row->image }}" /></th>
 
                     <th>{{$row->ar_name}}</th>
                     <th>{{$row->en_name}}</th>
                     <th>
-                        {!! strip_tags(Illuminate\Support\Str::limit($row->ar_desc ?? '', $limit = 150, $end = '...')) !!}</th>
+                        {!! Illuminate\Support\Str::limit($row->ar_desc ?? '', $limit = 150, $end = '...') !!}</th>
 
                     <th>
-                        {!! strip_tags(Illuminate\Support\Str::limit($row->en_desc ?? '', $limit = 150, $end = '...')) !!} </th>
+                        {!! Illuminate\Support\Str::limit($row->en_desc ?? '', $limit = 150, $end = '...') !!} </th>
 
                     <th>{{$row->cat->ar_name ?? ''}} </th>
                     <th>{{$row->order}}</th>

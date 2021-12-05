@@ -22,10 +22,10 @@
                 <th>{{ $index + 1 }}</th>
                 <th>
                     @if ($row->type==1)
-                    <img width="100" src="{{ asset('uploads/categories') }}/{{ $row->image }}" />
+                    <img width="200" src="{{ asset('uploads/categories') }}/{{ $row->image }}" />
 
                     @else
-                    <video autoplay muted loop width="100">
+                    <video autoplay muted loop width="200">
                         <source src="{{ $row->image }}" type="video/mp4" />
                     </video>
                     @endif

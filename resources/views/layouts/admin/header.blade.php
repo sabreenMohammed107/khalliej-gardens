@@ -63,10 +63,19 @@
 
                 </li>
                 <li class="nav-item has-treeview menu-open">
+                    <a href="{{ route('gallery-category.index') }}" class="nav-link ">
+                        <i class="fas fa-cogs"></i>
+                        <p>
+                           تصنيفات الاستوديو
+                        </p>
+                    </a>
+
+                </li>
+                <li class="nav-item has-treeview menu-open">
                     <a href="{{ route('gallery.index') }}" class="nav-link ">
                         <i class="fas fa-cogs"></i>
                         <p>
-                           الجاليرى
+                           مكتبة الصور والفديوهات
                         </p>
                     </a>
 
@@ -94,6 +103,24 @@
                         <i class="fas fa-cogs"></i>
                         <p>
                          ارقام حدائق الخليج
+                        </p>
+                    </a>
+
+                </li>
+                <li class="nav-item has-treeview menu-open">
+                    <a href="{{ route('messages.index') }}" class="nav-link ">
+                        <i class="fas fa-cogs"></i>
+                        <p>
+                      الرسائل
+                        </p>
+                    </a>
+
+                </li>
+                <li class="nav-item has-treeview menu-open">
+                    <a href="{{ route('company-contact.index') }}" class="nav-link ">
+                        <i class="fas fa-cogs"></i>
+                        <p>
+                      بيانات التواصل
                         </p>
                     </a>
 
