@@ -9,7 +9,7 @@
                 <h1 class="text-white">
                     الخدمات
                 </h1>
-                <p class="text-white link-nav"><a href="{{ LaravelLocalization::localizeUrl('/') }}">الرئيسية </a>  <span class="lnr lnr-arrow-left"></span><a href="#">الخدمات </a></p>
+                <p class="text-white link-nav"><a href="{{ LaravelLocalization::localizeUrl('/') }}">الرئيسية </a>  <span class="lnr lnr-arrow-left"></span><a href="#">جدمات حدائق الخليج </a></p>
             </div>
         </div>
     </div>
