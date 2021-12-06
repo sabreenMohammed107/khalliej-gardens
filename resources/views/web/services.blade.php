@@ -58,7 +58,7 @@
 							<div class="popular-post-list">
 								<div class="row justify-content-between align-items-center pb-20">
 									<div class="col-lg-12 col-md-6 search-course-right">
-										<h3 class="clr-green">أعمال المؤسسة</h3>
+										<h3 class="clr-green">أعمال حدائق الخليج</h3>
 									</div>
 								</div>
                                 @foreach ($servicesRand as $row)

@@ -68,8 +68,8 @@
                         </div>
                         @foreach ($blogsRand as $blog)
                         <div class="single-post-list d-flex flex-row align-items-center">
-                            <div class="thumb hover15">
-                                <figure><img class="img-fluid" src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt=""></figure>
+                            <div class="thumb hover15 w-50">
+                                <figure><img class="img-fluid w-100" style="height:120px;width:100%" src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt=""></figure>
                             </div>
                             <div class="details">
                                 <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}"><span style="color: #333">{{ $blog->ar_title }}</span></a>

@@ -71,22 +71,25 @@
                     <div class="popular-post-list">
                         <div class="row justify-content-between align-items-center pb-20">
                             <div class="col-lg-12 col-md-6 search-course-right">
-                                <h3 class="clr-green">المشاركات الشائعة</h3>
+                                <h3 class="clr-green">أعمال حدائق الخليج</h3>
                             </div>
                         </div>
                         @foreach ($servicesRand as $row)
-                                <div class="single-post-list d-flex flex-row align-items-center">
-                                    <div class="thumb hover15">
-                                        <figure><img class="img-fluid" src="{{ asset('uploads/service') }}/{{ $row->image }}" alt=""></figure>
-                                    </div>
-                                    <div class="details">
-                                        <a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $row->id) }}"><h6> {{ $row->ar_name }}</h6></a>
-                                        <p>
-                                            {!! Illuminate\Support\Str::limit($row->ar_desc ?? '', $limit = 35, $end = '...') !!}
-                                        </p>
-                                    </div>
-                                </div>
-                                @endforeach
+                        <div class="single-post-list d-flex flex-row align-items-center">
+                            <div class="thumb hover15 w-50">
+                                <figure><img class="img-fluid w-100" style="height:120px;width:100%" src="{{ asset('uploads/service') }}/{{ $row->image }}" alt=""></figure>
+                            </div>
+                            <div class="details">
+                                <a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $row->id) }}"><p style="margin: 0"> {{ $row->ar_name }}</p></a>
+                                {{-- <span>
+                                    {!! Illuminate\Support\Str::limit($row->ar_desc ?? '', $limit = 35, $end = '...') !!}
+                                </span> --}}
+                            </div>
+                        </div>
+
+                        @endforeach
+
+
                     </div>
                     <div class="single-sidebar-widget post-category-widget pl-20">
                         <div class="row justify-content-between align-items-center  pt-80 pb-20">

@@ -69,14 +69,14 @@ class IndexController extends Controller
     {
         $categories = Category::all();
         $blogs = Blog::paginate(4);
-        $blogsRand= Blog::inRandomOrder()->limit(4)->get();
+        $blogsRand= Blog::limit(4)->get();
         return view('web.blogs', compact('categories', 'blogs','blogsRand'));
     }
     public function singleBlog($id)
     {
         $categories = Category::all();
         $blog = Blog::where('id',$id)->first();
-        $blogsRand= Blog::inRandomOrder()->limit(4)->get();
+        $blogsRand= Blog::limit(4)->get();
            // get previous user id
 
     $previous = Blog::where('id', '<', $id)->max('id');
@@ -96,7 +96,7 @@ class IndexController extends Controller
     {
         $categories = Category::all();
         $service = Service::where('id',$id)->first();
-        $servicesRand= Service::inRandomOrder()->limit(4)->get();
+        $servicesRand= Service::limit(4)->get();
         // get previous user id
 
     $previous = Service::where('id', '<', $id)->max('id');
