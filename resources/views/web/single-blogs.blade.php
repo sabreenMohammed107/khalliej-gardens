@@ -38,7 +38,7 @@
                 <div class="col-lg-8 event-details-left mb-20">
                     <div class="bg-white">
                         <div class="main-img">
-                            <img class="img-fluid" src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt="">
+                            <img class="img-fluid  w-100" src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt="">
                         </div>
                         <div class="details-content p-10-40">
                             <a href="#">
@@ -141,7 +141,7 @@
                     <div class="popular-post-list">
                         <div class="row justify-content-between align-items-center pb-20">
                             <div class="col-lg-12 col-md-6 search-course-right">
-                                <h3 class="clr-green">المشاركات الشائعة</h3>
+                                <h3 class="clr-green">مدونات حدائق الخليج</h3>
                             </div>
                         </div>
                         @foreach ($blogsRand as $row)
