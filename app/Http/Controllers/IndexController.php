@@ -36,7 +36,7 @@ class IndexController extends Controller
     public function client()
     {
         $clients = Client::where('active',1)->get();
-        $clientsRand = Client::inRandomOrder()->where('active',1)->limit(8)->get();
+        $clientsRand = Client::inRandomOrder()->where('active',1)->get();
         return view('web.client', compact('clients', 'clientsRand'));
     }
     public function contact()
