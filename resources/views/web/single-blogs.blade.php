@@ -168,7 +168,7 @@
                             @foreach ( $categories as $cat)
                             <li>
                                 <a href="{{ LaravelLocalization::localizeUrl('/web-service') }}" class="d-flex justify-content-between">
-                                    <h4 class="pb-10"> <i class="fa fa-chevron-left pl-3 fz-12"></i>{{$cat->ar_name}}</h4>
+                                    <h4 style="color: #333;font-size:20px" class="pb-10"> <i class="fa fa-chevron-left pl-3 fz-12"></i>{{$cat->ar_name}}</h4>
                                 </a>
                             </li>
                             @endforeach
