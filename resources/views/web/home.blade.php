@@ -324,14 +324,7 @@
 @section('scripts')
 <script>
 $(function(){
-    var $grid = $(".grid").isotope({
-						itemSelector: ".all",
-						percentPosition: true,
-                        isOriginLeft: false,
-						masonry: {
-							columnWidth: ".all"
-						}
-					})
+
     $('.bg-cat1').click(function(){
         $('iframe').attr('src', $('iframe').attr('src'));
     });

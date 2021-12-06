@@ -26,14 +26,14 @@
 						var data = $(this).attr('data-filter');
 						$grid.isotope({
 							filter: data,
-                            isOriginLeft: false,
+
 
 						})
 					});
 
 					var $grid = $(".grid").isotope({
 						itemSelector: ".all",
-						percentPosition: true,
+
                         isOriginLeft: false,
 						masonry: {
 							columnWidth: ".all"
