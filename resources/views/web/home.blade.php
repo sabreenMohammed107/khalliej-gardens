@@ -155,8 +155,10 @@
         </div>
         <div  class="filters-content">
             <div class="row grid">
+                <?php $count = 0; ?>
                 @foreach ($categories as $row)
-                @foreach ( $row->service->take(8) as $service)
+                @foreach ( $row->service as $service)
+                <?php if($count == 8) break; ?>
                 <div class="col-sm-3 all {{$row->id}}">
                     <div class="item">
                         <div class=" hover13">
@@ -172,6 +174,7 @@
                         </div>
                     </div>
                 </div>
+                <?php $count++; ?>
                 @endforeach
                 @endforeach
 
