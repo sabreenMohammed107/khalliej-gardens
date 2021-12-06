@@ -323,6 +323,16 @@
 @endsection
 @section('scripts')
 <script>
+     $(document).ready(function() {
+    var $grid = $(".grid").isotope({
+						itemSelector: ".all",
+
+                        isOriginLeft: false,
+						masonry: {
+							columnWidth: ".all"
+						}
+					})
+                });
 $(function(){
 
     $('.bg-cat1').click(function(){
