@@ -22,7 +22,7 @@
                 <div class="col-lg-8 event-details-left mb-20">
                     <div class="bg-white">
                         <div class="main-img">
-                            <img class="img-fluid" src="{{ asset('uploads/service') }}/{{ $service->image }}" alt="">
+                            <img class="img-fluid w-100" src="{{ asset('uploads/service') }}/{{ $service->image }}" alt="">
                         </div>
                         <div class="details-content p-10-40">
                             <a href="#">
