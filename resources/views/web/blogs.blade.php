@@ -26,7 +26,7 @@
                             @foreach ($blogs as $blog)
                             <div class="col-lg-12">
                                 <div class="single-carusel row align-items-center">
-                                    <div class="col-12 col-md-5 thumb hover07 hover14">
+                                    <div class="col-12 col-md-5 thumb  hover14">
                                         <figure><img class="img-fluid " src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt=""></figure>
                                     </div>
                                     <div class="detials col-12 col-md-7">
@@ -36,10 +36,10 @@
                                             </h4>
                                         </a>
                                         <h5>
-                                            {!! Illuminate\Support\Str::limit(($blog->ar_text),  $limit = 100, $end = '...') !!}
+                                            {!! Illuminate\Support\Str::limit(($blog->ar_text),  $limit = 170, $end = '...') !!}
                                             {{-- {{ $blog->ar_text }} --}}
                                         </h5>
-                                        <h4 class="pt-10"><a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}" class="clr-green fz-18">إقراء المزيد &gt;&gt;</a></h4>
+                                        <h4 class="pt-10"><a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}" class="clr-green fz-18">تفاصيل أكثر ..</a></h4>
                                     </div>
                                 </div>
                             </div>

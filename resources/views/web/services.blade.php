@@ -43,7 +43,7 @@
 											<p>
                                                 {!! Illuminate\Support\Str::limit($service->ar_desc ?? '', $limit = 100, $end = '...') !!}
 											</p>
-											<h4><a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $service->id) }}" class="clr-green">إقراء المزيد &gt;&gt;</a></h4>
+											<h4><a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $service->id) }}" class="clr-green">تفاصيل أكثر .. </a></h4>
 										</div>
 									</div>
                                     @endforeach
