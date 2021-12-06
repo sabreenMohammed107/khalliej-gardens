@@ -156,7 +156,7 @@
         <div  class="filters-content">
             <div class="row grid">
                 @foreach ($categories as $row)
-                @foreach ( $row->service as $service)
+                @foreach ( $row->service->take(8) as $service)
                 <div class="col-sm-3 all {{$row->id}}">
                     <div class="item">
                         <div class=" hover13">
