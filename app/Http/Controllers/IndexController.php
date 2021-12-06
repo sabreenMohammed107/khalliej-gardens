@@ -55,7 +55,7 @@ class IndexController extends Controller
     {
         $categories = Category::all();
         $services = Service::all();
-        $servicesRand= Service::inRandomOrder()->limit(4)->get();
+        $servicesRand= Service::limit(4)->get();
         return view('web.services', compact('categories', 'services','servicesRand'));
     }
     public function gallery()
