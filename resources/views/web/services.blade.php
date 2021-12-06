@@ -67,10 +67,10 @@
                                         <figure><img class="img-fluid" src="{{ asset('uploads/service') }}/{{ $row->image }}" alt=""></figure>
                                     </div>
                                     <div class="details">
-                                        <a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $row->id) }}"><h6> {{ $row->ar_name }}</h6></a>
-                                        <p>
+                                        <a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $row->id) }}"><p style="margin: 0"> {{ $row->ar_name }}</p></a>
+                                        {{-- <span>
                                             {!! Illuminate\Support\Str::limit($row->ar_desc ?? '', $limit = 35, $end = '...') !!}
-                                        </p>
+                                        </span> --}}
                                     </div>
                                 </div>
                                 @endforeach
