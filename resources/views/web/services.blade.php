@@ -34,7 +34,7 @@
                                     @foreach ( $cat->service as $service)
 									<div class="col-lg-4 col-md-6 single-blog pb-30">
 										<div class="thumb hover14 hover07">
-											<figure><img class="img-fluid" src="{{ asset('uploads/service') }}/{{ $service->image }}" alt=""></figure>
+											<figure><img class="img-fluid" style="height: 280PX" src="{{ asset('uploads/service') }}/{{ $service->image }}" alt=""></figure>
 										</div>
 										<div class="text-box">
 											<a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $service->id) }}">

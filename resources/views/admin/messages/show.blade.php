@@ -64,7 +64,7 @@
         </div>
     </div>
      <div class="card-footer">
-        <button type="button" class="btn btn-primary">حفظ</button>
+        {{-- <button type="button" class="btn btn-primary">حفظ</button> --}}
         <a href="{{ route('messages.index') }}" class="btn btn-secondary" >إغلاق</a>
 
     </div>

@@ -7,10 +7,10 @@
             <div class="row d-flex align-items-center justify-content-center dir-rtl">
                 <div class="about-content col-lg-12">
                     <h1 class="text-white">
-                        الاستوديو
+                        مكتبة الصور والفديوهات
                     </h1>
                     <p class="text-white link-nav"><a href="{{ LaravelLocalization::localizeUrl('/') }}">الرئيسية </a> <span
-                            class="lnr lnr-arrow-left"></span><a href="#">الاستوديو </a></p>
+                            class="lnr lnr-arrow-left"></span><a href="#">  مكتبة الصور والفديوهات </a></p>
                 </div>
             </div>
         </div>

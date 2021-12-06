@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Message;
 use Illuminate\Http\Request;
-
+use Illuminate\Database\QueryException;
 class MessagesController extends Controller
 {
     protected $object;
@@ -98,6 +98,17 @@ class MessagesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $row=Message::where('id',$id)->first();
+
+        try {
+
+            $row->delete();
+            return redirect()->back()->with('flash_success', 'تم الحذف بنجاح !');
+
+        } catch (QueryException $q) {
+            // return redirect()->back()->withInput()->with('flash_danger', $q->getMessage());
+
+            return redirect()->back()->with('flash_danger', 'هذا الجدول مربوط بجدول اخر ..لا يمكن المسح');
+        }
     }
 }
