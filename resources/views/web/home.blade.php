@@ -159,7 +159,7 @@
                 @foreach ( $row->service as $service)
                 <div class="col-sm-3 all {{$row->id}}">
                     <div class="item">
-                        <div class="hover07 hover13">
+                        <div class=" hover13">
                             <figure><img style="height: 300px" src="{{ asset('uploads/service') }}/{{ $service->image }}" /></figure>
                         </div>
                         <!--<img src="imgs/1.webp" alt="Work 1">-->
@@ -274,7 +274,7 @@
         <div class="row dir-rtl">
             @foreach ($blogs as $row)
             <div class="col-lg-4 col-md-6 single-blog">
-                <div class="thumb hover07  hover13">
+                <div class="thumb   hover13">
                     <figure><img style="height: 300px" class="img-fluid" src="{{ asset('uploads/blogs') }}/{{ $row->image }}" alt=""></figure>
                 </div>
                 <div class="text-box">
@@ -321,6 +321,14 @@
 @section('scripts')
 <script>
 $(function(){
+    var $grid = $(".grid").isotope({
+						itemSelector: ".all",
+						percentPosition: true,
+                        isOriginLeft: false,
+						masonry: {
+							columnWidth: ".all"
+						}
+					})
     $('.bg-cat1').click(function(){
         $('iframe').attr('src', $('iframe').attr('src'));
     });
