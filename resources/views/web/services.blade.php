@@ -63,7 +63,7 @@
 								</div>
                                 @foreach ($servicesRand as $row)
                                 <div class="single-post-list d-flex flex-row align-items-center">
-                                    <div class="thumb hover15">
+                                    <div class="thumb hover15 w-50">
                                         <figure><img class="img-fluid w-100" style="height:120px;width:100%" src="{{ asset('uploads/service') }}/{{ $row->image }}" alt=""></figure>
                                     </div>
                                     <div class="details">
