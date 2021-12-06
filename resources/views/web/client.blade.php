@@ -166,7 +166,7 @@ display: none;
                             <img class="img-fluid" style="height: 200px"  src="{{ asset('uploads/clients') }}/{{ $client->logo }}" alt="">
                         </div>
                         <div class="detials col-12 col-md-6">
-                            <p>{{ date('d-m-Y', strtotime($client->created_at)) }}</p>
+                            <p>عميل مميز</p>
                             <a href="#">
                                 <h4 class="clr-green">{{$client->ar_name}}</h4>
                                 <h6>{{$client->ar_brief}} </h6>

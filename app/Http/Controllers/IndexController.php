@@ -24,7 +24,7 @@ class IndexController extends Controller
         $whyUs = Why_us::all();
         $galleries = Gallery::take(6)->get();
         $blogs = Blog::take(3)->get();
-        $clients = Client::all();
+        $clients = Client::where('active',1)->get();
         $numbers = Golf_number::all();
         return view('web.home', compact('categories', 'whyUs', 'galleries', 'blogs', 'clients', 'numbers'));
     }
@@ -35,8 +35,8 @@ class IndexController extends Controller
     }
     public function client()
     {
-        $clients = Client::all();
-        $clientsRand = Client::inRandomOrder()->limit(8)->get();
+        $clients = Client::where('active',1)->get();
+        $clientsRand = Client::inRandomOrder()->where('active',1)->limit(8)->get();
         return view('web.client', compact('clients', 'clientsRand'));
     }
     public function contact()
