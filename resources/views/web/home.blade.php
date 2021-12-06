@@ -75,7 +75,7 @@
     <div class="container">
         <div class="row justify-content-between align-items-center pt-80 pb-20 dir-rtl">
             <div class="col-lg-7 col-md-6 search-course-right">
-                <h3>ماذا نفعل ..</h3>
+                <h3>حدائق الخليج</h3>
                 <h4 class="clr-green">لماذا تختارنا ..</h4>
 
             </div>
@@ -135,7 +135,7 @@
     <div class="container">
         <div class="row justify-content-between align-items-center pt-50 dir-rtl">
             <div class="col-lg-5 col-md-6 search-course-right">
-                <h3>ماذا نفعل ..</h3>
+                <h3>حدائق الخليج</h3>
                 <h4 class="clr-green">خدمات الشركة</h4>
 
             </div>
@@ -209,8 +209,8 @@
     <div class="container">
         <div class="row justify-content-between align-items-center pt-80 dir-rtl">
             <div class="col-lg-7 col-md-6 search-course-right pb-10">
-                <h3>تنسيق الحدائق </h3>
-                <h4 class="clr-green">مكتبة الصور والفيديوهات حدائق الخليج</h4>
+                <h3>حدائق الخليج </h3>
+                <h4 class="clr-green">مكتبة الصور والفيديوهات  </h4>
 
             </div>
             <div class="col-lg-5 col-md-6 search-course-left">
@@ -266,8 +266,8 @@
     <div class="container">
         <div class="row justify-content-between align-items-center pt-80 pb-30 dir-rtl blog-header">
             <div class="col-lg-7 col-md-6 search-course-right pb-10">
-                <h3>تنسيق الحدائق </h3>
-                <h4 class="clr-green">مقالات حدائق الخليج</h4>
+                <h3>حدائق الخليج </h3>
+                <h4 class="clr-green">أحدث المقالات</h4>
 
             </div>
             <div class="col-lg-5 col-md-6 search-course-left">
