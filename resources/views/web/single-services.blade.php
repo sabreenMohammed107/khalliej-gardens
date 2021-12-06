@@ -91,7 +91,7 @@
                     <div class="single-sidebar-widget post-category-widget pl-20">
                         <div class="row justify-content-between align-items-center  pt-80 pb-20">
                             <div class="col-lg-12 col-md-6 search-course-right">
-                                <h3 class="clr-green">التصنيفات</h3>
+                                <h3 class="clr-green">خدمات حدائق الخليج</h3>
                             </div>
                         </div>
                         <ul class="cat-list">
