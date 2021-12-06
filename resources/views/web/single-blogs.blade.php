@@ -85,7 +85,7 @@
                     </div>
                     {{-- comment --}}
                     <div class="row pl-15 pr-15">
-                        <h3 class="mb-10 mt-30 clr-green">كتابة تعليق</h3>
+                        <h3 class="mb-10 mt-30 clr-green">راسل إدارة الموقع </h3>
 
                             <form  action="{{ LaravelLocalization::localizeUrl('/send-Comment') }}" method="post">
                                 @csrf
@@ -105,7 +105,7 @@
                                         <input type="text" name="mobile" placeholder="رقم التليفون" onfocus="this.placeholder = ''" onblur="this.placeholder = 'رقم التليفون'" required class="single-input">
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                {{-- <div class="col-lg-6">
                                     <div class="input-group-icon mt-10">
                                         <div class="form-select" id="default-select">
                                             <select>
@@ -118,7 +118,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="col-lg-12">
                                     <div class="mt-10">
                                         <input type="text" name="address" placeholder="العنوان" onfocus="this.placeholder = ''" onblur="this.placeholder = 'العنوان'" required class="single-input">
