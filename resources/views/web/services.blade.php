@@ -64,7 +64,7 @@
                                 @foreach ($servicesRand as $row)
                                 <div class="single-post-list d-flex flex-row align-items-center">
                                     <div class="thumb hover15">
-                                        <figure><img class="img-fluid" src="{{ asset('uploads/service') }}/{{ $row->image }}" alt=""></figure>
+                                        <figure><img class="img-fluid" style="height:150px" src="{{ asset('uploads/service') }}/{{ $row->image }}" alt=""></figure>
                                     </div>
                                     <div class="details">
                                         <a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $row->id) }}"><p style="margin: 0"> {{ $row->ar_name }}</p></a>
