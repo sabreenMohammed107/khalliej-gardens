@@ -33,12 +33,12 @@
 								<div class="row dir-rtl pb-30">
                                     @foreach ( $cat->service as $service)
 									<div class="col-lg-4 col-md-6 single-blog pb-30">
-										<div class="thumb hover14 hover07">
+										<div class="thumb hover14 ">
 											<figure><img class="img-fluid" style="height: 280PX" src="{{ asset('uploads/service') }}/{{ $service->image }}" alt=""></figure>
 										</div>
 										<div class="text-box">
 											<a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $service->id) }}">
-												<h4 class="clr-green pt-20 pb-20"> {{ $service->ar_name }}</h4>
+												<h4 class="clr-green" style="font-size: 20px"> {{ $service->ar_name }}</h4>
 											</a>
 											<p>
                                                 {!! Illuminate\Support\Str::limit($service->ar_desc ?? '', $limit = 80, $end = '...') !!}
