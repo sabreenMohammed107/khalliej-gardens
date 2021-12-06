@@ -36,7 +36,7 @@
                                             </h4>
                                         </a>
                                         <h5>
-                                            {!! Illuminate\Support\Str::limit(($blog->ar_text),  $limit = 170, $end = '...') !!}
+                                            {!! Illuminate\Support\Str::limit(($blog->ar_text),  $limit = 200, $end = '...') !!}
                                             {{-- {{ $blog->ar_text }} --}}
                                         </h5>
                                         <h4 class="pt-10"><a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}" class="clr-green fz-18">تفاصيل أكثر ..</a></h4>
