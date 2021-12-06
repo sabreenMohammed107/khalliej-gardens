@@ -72,10 +72,10 @@
                                 <figure><img class="img-fluid w-100" style="height:120px;width:100%" src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt=""></figure>
                             </div>
                             <div class="details">
-                                <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}"><span style="color: #333">{{ $blog->ar_title }}</span></a>
-                                <p>
+                                <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}"><p style="color: #333">{{ $blog->ar_title }}</p></a>
+                                {{-- <p>
                                     {!! Illuminate\Support\Str::limit($blog->ar_text ?? '', $limit = 35, $end = '...') !!}
-                                </p>
+                                </p> --}}
                             </div>
                         </div>
                         @endforeach

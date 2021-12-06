@@ -150,10 +150,10 @@
                                         <figure><img class="img-fluid w-100" style="height:120px;width:100%" src="{{ asset('uploads/blogs') }}/{{ $row->image }}" alt=""></figure>
                                     </div>
                                     <div class="details">
-                                        <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $row->id) }}"><span style="color: #333">{{ $row->ar_title }}</span></a>
-                                        <p>
+                                        <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $row->id) }}"><p style="color: #333">{{ $row->ar_title }}</p></a>
+                                        {{-- <p>
                                             {!! Illuminate\Support\Str::limit($row->ar_text ?? '', $limit = 35, $end = '...') !!}
-                                        </p>
+                                        </p> --}}
                                     </div>
                                 </div>
                                 @endforeach
