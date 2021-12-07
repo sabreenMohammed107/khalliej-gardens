@@ -1,5 +1,15 @@
 @extends('web.layout.main')
 @section('content')
+<style>
+    .isotope .isotope-item {
+        -webkit-transition-property: right, top, -webkit-transform, opacity;
+        -moz-transition-property: right, top, -moz-transform, opacity;
+        -ms-transition-property: right, top, -ms-transform, opacity;
+        -o-transition-property: right, top, -o-transform, opacity;
+        transition-property: right, top, transform, opacity;
+    }
+
+</style>
 <!-- start banner Area -->
 <section class="banner-area relative" id="home">
     <!--<div class="overlay overlay-bg"></div>-->
@@ -327,7 +337,7 @@
     var $grid = $(".grid").isotope({
 						itemSelector: ".all",
 
-                        isOriginLeft: false,
+                        originLeft: false,
 						masonry: {
 							columnWidth: ".all"
 						}
