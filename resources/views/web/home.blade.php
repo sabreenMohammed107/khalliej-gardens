@@ -1,15 +1,6 @@
 @extends('web.layout.main')
 @section('content')
-<style>
-    .isotope .isotope-item {
-        -webkit-transition-property: right, top, -webkit-transform, opacity;
-        -moz-transition-property: right, top, -moz-transform, opacity;
-        -ms-transition-property: right, top, -ms-transform, opacity;
-        -o-transition-property: right, top, -o-transform, opacity;
-        transition-property: right, top, transform, opacity;
-    }
 
-</style>
 <!-- start banner Area -->
 <section class="banner-area relative" id="home">
     <!--<div class="overlay overlay-bg"></div>-->
@@ -164,7 +155,7 @@
             </div>
         </div>
         <div  class="filters-content">
-            <div class="row grid">
+            <div class="row grid dir-rtl">
 
                 @foreach ($categories as $row)
                 @foreach ( $row->service as $service)
@@ -333,16 +324,7 @@
 @endsection
 @section('scripts')
 <script>
-     $(document).ready(function() {
-    var $grid = $(".grid").isotope({
-						itemSelector: ".all",
 
-                        originLeft: false,
-						masonry: {
-							columnWidth: ".all"
-						}
-					})
-                });
 $(function(){
 
     $('.bg-cat1').click(function(){
