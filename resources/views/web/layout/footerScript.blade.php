@@ -31,6 +31,12 @@ integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b
 
 
         })
+        $grid2.isotope({
+            filter: data,
+
+
+
+        })
     });
 
     var $grid = $(".grid").isotope({
@@ -41,6 +47,17 @@ integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b
 
         masonry: {
             columnWidth: ".all"
+        }
+    })
+
+    var $grid2 = $(".grid").isotope({
+        itemSelector: ".gallery-item",
+
+        isOriginLeft: false,
+        isOriginTop: true,
+
+        masonry: {
+            columnWidth: ".gallery-item"
         }
     })
 </script>

@@ -160,7 +160,7 @@
                 @foreach ($categories as $row)
                 @foreach ( $row->service as $service)
 
-                <div class="col-sm-3 all {{$row->id}}">
+                <div class="col-sm-3 gallery-item {{$row->id}}">
                     <div class="item">
                         <div class=" hover13">
                             <figure><img style="height: 300px" src="{{ asset('uploads/service') }}/{{ $service->image }}" /></figure>
