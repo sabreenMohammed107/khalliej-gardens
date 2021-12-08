@@ -222,7 +222,7 @@
             @foreach ($galleries as $row)
 
             <div class="col-lg-4">
-                <a href="imgs/counter.webp" class="img-gal">
+                <a href="{{ asset('uploads/categories') }}/{{ $row->image }}" class="img-gal">
                     <div class="single-imgs relative">
                         <div class="container-overlay" style="width:100%" >
                             <div class="content">
