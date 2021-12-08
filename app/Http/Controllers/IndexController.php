@@ -15,6 +15,7 @@ use App\Models\Service;
 use App\Models\Why_us;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Lang as Lang;
+use Carbon\Carbon;
 class IndexController extends Controller
 {
 
@@ -46,7 +47,9 @@ class IndexController extends Controller
         return view('web.contact', compact('contact', 'types'));
     }
     public function sendMessage(Request $request){
-        Message::create($request->except('_token'));
+        $input = $request->except('_token');
+        $input['message_date']=Carbon::now()->toDateTimeString();
+        Message::create($input);
         session()->flash('success', Lang::get('links.controller_message'));
         return redirect()->route('contact')->with('flash_success', Lang::get('links.controller_message'));
     }
@@ -88,7 +91,9 @@ class IndexController extends Controller
     }
 
     public function sendComment(Request $request){
-        Message::create($request->except('_token'));
+        $input = $request->except('_token');
+        $input['message_date']=Carbon::now()->toDateTimeString();
+        Message::create($input);
         session()->flash('success', Lang::get('links.controller_message'));
         return redirect()->back()->with('flash_success', Lang::get('links.controller_message'));
     }
