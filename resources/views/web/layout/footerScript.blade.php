@@ -43,23 +43,21 @@ integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b
         itemSelector: ".all",
 
         isOriginLeft: false,
-        isOriginTop: true,
-
-        masonry: {
+      masonry: {
             columnWidth: ".all"
         }
     })
 
-    var $grid2 = $(".grid").isotope({
-        itemSelector: ".home-all",
+    // var $grid2 = $(".grid").isotope({
+    //     itemSelector: ".home-all",
 
-        isOriginLeft: false,
-        isOriginTop: true,
+    //     isOriginLeft: false,
+    //     isOriginTop: true,
 
-        masonry: {
-            columnWidth: ".home-all"
-        }
-    })
+    //     masonry: {
+    //         columnWidth: ".home-all"
+    //     }
+    // })
 </script>
 
 <script>
