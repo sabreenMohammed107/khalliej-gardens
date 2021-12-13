@@ -51,7 +51,7 @@
                         <li>
                             <div class="row">
                                 <div class="col-lg-1"><i class="fa fa-mobile"></i></div>
-                                <div class="col-lg-11 "><a href="#" class="clr-green">الهاتف<br /></a><span>{{$contact->phone}}</span></div>
+                                <div class="col-lg-11 "><a href="tel:+1117615935" class="clr-green">الهاتف<br /></a><span>{{$contact->phone}}</span></div>
                             </div>
                         </li>
                         <li>
