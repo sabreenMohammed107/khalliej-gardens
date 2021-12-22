@@ -15,20 +15,20 @@ class CreateCompaniesTable extends Migration
     {
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
-            $table->string('en_name')->nullable();
-            $table->string('ar_name')->nullable();
-            $table->string('en_about_title')->nullable();
-            $table->string('ar_about_title')->nullable();
-            $table->text('en_about')->nullable();
-            $table->text('ar_about')->nullable();
-            $table->text('en_overview')->nullable();
-            $table->text('ar_overview')->nullable();
-            $table->text('en_vision')->nullable();
-            $table->text('ar_vision')->nullable();
-            $table->text('en_mission')->nullable();
-            $table->text('ar_mission')->nullable();
-            $table->text('en_value')->nullable();
-            $table->text('ar_value')->nullable();
+            $table->longText('en_name')->nullable();
+            $table->longText('ar_name')->nullable();
+            $table->longText('en_about_title')->nullable();
+            $table->longText('ar_about_title')->nullable();
+            $table->longText('en_about')->nullable();
+            $table->longText('ar_about')->nullable();
+            $table->longText('en_overview')->nullable();
+            $table->longText('ar_overview')->nullable();
+            $table->longText('en_vision')->nullable();
+            $table->longText('ar_vision')->nullable();
+            $table->longText('en_mission')->nullable();
+            $table->longText('ar_mission')->nullable();
+            $table->longText('en_value')->nullable();
+            $table->longText('ar_value')->nullable();
             $table->timestamps();
         });
     }
