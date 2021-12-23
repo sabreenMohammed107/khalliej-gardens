@@ -39,6 +39,7 @@
                 </ul>
             </nav><!-- #nav-menu-container -->
         </div>
+
     </div>
     <a href="https://api.whatsapp.com/send?phone=+966547463140&text=khalliej-gardens" class="float-whatsapp" target="_blank">
         <i class="fa fa-whatsapp icon-whatsapp"></i>
