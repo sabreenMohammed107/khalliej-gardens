@@ -28,6 +28,7 @@ Route::group(
         //     return view('web.home');
         //     // return Redirect::to(Config::get('app.default_language'));
         // });
+        Route::get('/sitemap.xml', 'App\Http\Controllers\PagesController@sitemap');
         Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
            //about us
 	Route::get('/about', [App\Http\Controllers\IndexController::class, 'about'])->name('about');
