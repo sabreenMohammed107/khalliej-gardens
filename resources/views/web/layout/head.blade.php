@@ -7,17 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon-->
     <link rel="shortcut icon" href="{{ asset('webassets/imgs/logo.webp') }}">
-    <!-- Author Meta -->
-    <meta name="author" content="colorlib">
-    <!-- Meta Description -->
-    <meta name="description" content="">
-    <!-- Meta Keyword -->
-    <meta name="keywords" content="">
+
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
     <title>حدائق الخليج</title>
-
+    <meta name="description" content="تعتبر سوق الجملة للعشب الصناعي للمقاولات إحدى المؤسسات الرائدة في المملكة العربية السعودية في قطاع الزراعة، نحن نتميز في تصميم وتخطيط المشاريع الصغيرة والكبيرة من خلال فرق العمل الوطنية والمستقطبة من الخارج لتنفيذ المشاريع الزراعية ">
+    <meta name="keywords" content="حدائق ,الخليج ,وتنسيق ,المملكة العربية السعودية,الزراعة ,بمسطحات خضراء,والديكورات ,خضراء  ,الحديقة الأندلسية">
+    <meta name="author" content="sabreen mohammed & senior steps">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <!--
         CSS
@@ -41,4 +38,14 @@
         }
 
     </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WDQCKCG23"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4WDQCKCG23');
+</script>
 </head>
