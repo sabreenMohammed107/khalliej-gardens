@@ -17,7 +17,7 @@
     <meta name="description" content="تعتبر سوق الجملة للعشب الصناعي للمقاولات إحدى المؤسسات الرائدة في المملكة العربية السعودية في قطاع الزراعة، نحن نتميز في تصميم وتخطيط المشاريع الصغيرة والكبيرة من خلال فرق العمل الوطنية والمستقطبة من الخارج لتنفيذ المشاريع الزراعية ">
     <meta name="keywords" content="حدائق ,الخليج ,وتنسيق ,المملكة العربية السعودية,الزراعة ,بمسطحات خضراء,والديكورات ,خضراء  ,الحديقة الأندلسية">
     <meta name="author" content="sabreen mohammed & senior steps">
-    <link rel="canonical" href="http://gulfgardens.net/" />
+    {{-- <link rel="canonical" href="http://gulfgardens.net/" /> --}}
 
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
