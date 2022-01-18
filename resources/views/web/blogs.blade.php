@@ -27,7 +27,7 @@
                             <div class="col-lg-12">
                                 <div class="single-carusel row align-items-center">
                                     <div class="col-12 col-md-5 thumb  hover14">
-                                        <figure><img class="img-fluid " src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt=""></figure>
+                                        <figure><img class="img-fluid " src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt="{{ $blog->image }}"></figure>
                                     </div>
                                     <div class="detials col-12 col-md-7">
                                         <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}">
@@ -69,7 +69,7 @@
                         @foreach ($blogsRand as $blog)
                         <div class="single-post-list d-flex flex-row align-items-center">
                             <div class="thumb hover15 w-50">
-                                <figure><img class="img-fluid w-100" style="height:120px;width:100%" src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt=""></figure>
+                                <figure><img class="img-fluid w-100" style="height:120px;width:100%" src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt="{{ $blog->image }}"></figure>
                             </div>
                             <div class="details">
                                 <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $blog->id) }}"><p style="color: #333">{{ $blog->ar_title }}</p></a>

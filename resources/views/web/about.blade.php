@@ -21,10 +21,10 @@
         <div class="container">
             <div class="row align-items-center dir-rtl">
                 <div class="col-lg-6 no-padding text-center mb-10">
-                    <img class="img-fluid h-300 br-5" src="{{ asset('webassets/imgs/1.webp')}}" alt="">
+                    <img class="img-fluid h-300 br-5" src="{{ asset('webassets/imgs/1.webp')}}" alt="{{ asset('webassets/imgs/1.webp')}}">
                 </div>
                 <div class="col-lg-6 no-padding text-center mb-10">
-                    <img class="img-fluid h-300 br-5" src="{{ asset('webassets/imgs/2.webp')}}" alt="">
+                    <img class="img-fluid h-300 br-5" src="{{ asset('webassets/imgs/2.webp')}}" alt="{{ asset('webassets/imgs/2.webp')}}">
                 </div>
                 <div class="col-lg-12 text-center pt-20">
                     <h3>حدائق الخليج لتصميم وتنسيق الحدائق</h3>
@@ -65,19 +65,19 @@
                                 <div class="content-overlay content-overlay2"></div>
                                 <div class="thumb pt-20">
                                     @if ($key == 0)
-                                <img src="{{ asset('webassets/imgs/Slate.svg')}}" alt="" class="h-55">
+                                <img src="{{ asset('webassets/imgs/Slate.svg')}}" alt="{{ asset('webassets/imgs/Slate.svg')}}" class="h-55">
                             @endif
                             @if ($key == 1)
-                            <img src="{{ asset('webassets/imgs/Group382.svg')}}" alt="" class="h-55">
+                            <img src="{{ asset('webassets/imgs/Group382.svg')}}" alt="{{ asset('webassets/imgs/Group382.svg')}}" class="h-55">
                         @endif
                         @if ($key == 2)
-                        <img src="{{ asset('webassets/imgs/Bribery.svg')}}" alt="" class="h-55">
+                        <img src="{{ asset('webassets/imgs/Bribery.svg')}}" alt="{{ asset('webassets/imgs/Bribery.svg')}}" class="h-55">
                     @endif
                     @if ($key == 3)
-                    <img src="{{ asset('webassets/imgs/Nomination.svg')}}" alt="" class="h-55">
+                    <img src="{{ asset('webassets/imgs/Nomination.svg')}}" alt="{{ asset('webassets/imgs/Nomination.svg')}}" class="h-55">
                 @endif
                 @if ($key == 4)
-                <img src="{{ asset('webassets/imgs/Ideology.svg')}}" alt="" class="h-55">
+                <img src="{{ asset('webassets/imgs/Ideology.svg')}}" alt="{{ asset('webassets/imgs/Ideology.svg')}}" class="h-55">
             @endif
                                 </div>
                                 <h5 class="pt-20 pb-20 clr-green">{{$why->en_title}}</h5>
@@ -102,7 +102,7 @@
                         <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="value-tab" data-toggle="tab" href="#value" role="tab" aria-controls="value" aria-selected="false">
-                                    <div class="thumb pt-20 text-center">
+                                    <div class="thumb pt-20 text-center">{{ asset('webassets/imgs/Slate.svg')}}
                                         <img src="{{ asset('webassets/imgs/Slate.svg')}}" alt="">
                                         <h5 class="clr-green pt-20">قيمتنا</h5>
                                     </div>
@@ -111,7 +111,7 @@
                             <li class="nav-item">
                                 <a class="nav-link " id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="profile" aria-selected="true">
                                     <div class="thumb pt-20 text-center">
-                                        <img src="{{ asset('webassets/imgs/Group382.svg')}}" alt="">
+                                        <img src="{{ asset('webassets/imgs/Group382.svg')}}" alt="{{ asset('webassets/imgs/Group382.svg')}}">
                                         <h5 class="clr-green pt-20">اهدافنا</h5>
                                     </div>
                                 </a>
@@ -119,7 +119,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="contact" aria-selected="false">
                                     <div class="thumb pt-20 text-center">
-                                        <img src="{{ asset('webassets/imgs/Ideology.svg')}}" alt="">
+                                        <img src="{{ asset('webassets/imgs/Ideology.svg')}}" alt="{{ asset('webassets/imgs/Ideology.svg')}}">
                                         <h5 class="clr-green pt-20">رؤيتنا</h5>
                                     </div>
                                 </a>

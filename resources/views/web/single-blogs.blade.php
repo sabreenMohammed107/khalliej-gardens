@@ -38,7 +38,7 @@
                 <div class="col-lg-8 event-details-left mb-20">
                     <div class="bg-white">
                         <div class="main-img">
-                            <img class="img-fluid  w-100" src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt="">
+                            <img class="img-fluid  w-100" src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt="{{ $blog->image }}">
                         </div>
                         <div class="details-content p-10-40">
                             <a href="#">
@@ -147,7 +147,7 @@
                         @foreach ($blogsRand as $row)
                                 <div class="single-post-list d-flex flex-row align-items-center">
                                     <div class="thumb hover15 w-50">
-                                        <figure><img class="img-fluid w-100" style="height:120px;width:100%" src="{{ asset('uploads/blogs') }}/{{ $row->image }}" alt=""></figure>
+                                        <figure><img class="img-fluid w-100" style="height:120px;width:100%" src="{{ asset('uploads/blogs') }}/{{ $row->image }}" alt="{{ $row->image }}"></figure>
                                     </div>
                                     <div class="details">
                                         <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $row->id) }}"><p style="color: #333">{{ $row->ar_title }}</p></a>

@@ -227,7 +227,7 @@
                         <div class="container-overlay" style="width:100%" >
                             <div class="content">
                                 <div class="content-overlay"></div>
-                                <img class="content-image w-100" style="height: 300px" src="{{ asset('uploads/categories') }}/{{ $row->image }}">
+                                <img class="content-image w-100" style="height: 300px" alt="{{ $row->image }}" src="{{ asset('uploads/categories') }}/{{ $row->image }}">
                                 <div class="content-details fadeIn-bottom">
                                     <h3 class="content-title">{{ $row->ar_title }}</h3>
                                     <p class="content-text">{{ $row->ar_text }} </p>
@@ -279,7 +279,7 @@
             @foreach ($blogs as $row)
             <div class="col-lg-4 col-md-6 single-blog">
                 <div class="thumb   hover13">
-                    <figure><img style="height: 300px" class="img-fluid" src="{{ asset('uploads/blogs') }}/{{ $row->image }}" alt=""></figure>
+                    <figure><img style="height: 300px" class="img-fluid" src="{{ asset('uploads/blogs') }}/{{ $row->image }}" alt="{{ $row->image }}"></figure>
                 </div>
                 <div class="text-box">
                     <a href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $row->id) }}">

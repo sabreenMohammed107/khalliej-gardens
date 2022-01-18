@@ -34,7 +34,7 @@
                                     @foreach ( $cat->service as $service)
 									<div class="col-lg-4 col-md-6 single-blog pb-30">
 										<div class="thumb hover14 ">
-											<figure><img class="img-fluid" style="height: 230PX" src="{{ asset('uploads/service') }}/{{ $service->image }}" alt=""></figure>
+											<figure><img class="img-fluid" style="height: 230PX" src="{{ asset('uploads/service') }}/{{ $service->image }}" alt="{{ $service->image }}"></figure>
 										</div>
 										<div class="text-box">
 											<a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $service->id) }}">
@@ -64,7 +64,7 @@
                                 @foreach ($servicesRand as $row)
                                 <div class="single-post-list d-flex flex-row align-items-center">
                                     <div class="thumb hover15 w-50">
-                                        <figure><img class="img-fluid w-100" style="height:120px;width:100%" src="{{ asset('uploads/service') }}/{{ $row->image }}" alt=""></figure>
+                                        <figure><img class="img-fluid w-100" style="height:120px;width:100%" src="{{ asset('uploads/service') }}/{{ $row->image }}" alt="{{ $row->image }}"></figure>
                                     </div>
                                     <div class="details">
                                         <a href="{{ LaravelLocalization::localizeUrl('/single-service/' . $row->id) }}"><p style="margin: 0"> {{ $row->ar_name }}</p></a>

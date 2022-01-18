@@ -140,7 +140,7 @@ display: none;
         <section class="customer-logos slider bg-white">
             @foreach ($clients as $client)
 
-                <div class="slide"><img style="height: 120px" src="{{ asset('uploads/clients') }}/{{ $client->logo }}"></div>
+                <div class="slide"><img style="height: 120px" src="{{ asset('uploads/clients') }}/{{ $client->logo }}" alt="{{ $client->logo }}"></div>
 
             @endforeach
 
@@ -163,7 +163,7 @@ display: none;
                     @foreach ($clients as $client)
                     <div class="single-carusel row align-items-center dir-rtl">
                         <div class="col-12 col-md-6 thumb">
-                            <img class="img-fluid" style="height: 200px"  src="{{ asset('uploads/clients') }}/{{ $client->logo }}" alt="">
+                            <img class="img-fluid" style="height: 200px"  src="{{ asset('uploads/clients') }}/{{ $client->logo }}" alt="{{ $client->logo }}">
                         </div>
                         <div class="detials col-12 col-md-6">
                             <p>عميل مميز</p>
@@ -215,7 +215,7 @@ color:#808080;
                 <div class="col-lg-3 sidebar-widgets">
                     <div class="widget-wrap bg-white">
                         <div class="single-sidebar-widget user-info-widget">
-                            <img class="client-img w-100"  src="{{ asset('uploads/clients') }}/{{ $client->logo }}" alt="">
+                            <img class="client-img w-100"  src="{{ asset('uploads/clients') }}/{{ $client->logo }}" alt="{{ $client->logo }}">
 
                             {{-- <img class="client-img" src="imgs/37.webp" alt=""> --}}
                             <a href="#"><h4>{{$client->ar_name}}</h4></a>

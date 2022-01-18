@@ -61,7 +61,7 @@
                                         <div class="container-overlay" style="width:100%" >
                                             <div class="content">
                                                 <div class="content-overlay"></div>
-                                                <img class="content-image w-100"  src="{{ asset('uploads/categories') }}/{{ $row->image }}">
+                                                <img class="content-image w-100" alt="{{ $row->image }}"  src="{{ asset('uploads/categories') }}/{{ $row->image }}">
                                                 <div class="content-details fadeIn-bottom">
                                                     <h3 class="content-title">{{ $row->ar_title }}</h3>
                                                     <p class="content-text">{{ $row->ar_text }} </p>
